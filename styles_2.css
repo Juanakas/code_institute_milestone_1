@@ -1,0 +1,364 @@
+html {
+  font-size: 115%;
+}
+
+body, .nav, .page-header, .sportive, .sportive-content, .sportive-table, .sportive-images, h1, h2, h3, td, th, ol, li, a, .reasons-box {
+  font-size: inherit;
+}
+
+/* Ensure table and h3 special styles remain larger as previously set */
+.sportive-table tr:first-child td,
+.sportive h3 {
+  font-size: 1.15em !important;
+}
+
+header {
+	text-align: center;
+	font-size: 2.4vh;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #003366;
+}
+
+header h1, header h2 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 3.168vh;
+}
+
+header h1, header h2 {
+    color: #003366; /* dark blue, same as nav */
+}
+
+.page-header {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+        url("sportive_1/1_E.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    text-align: center;
+    background-color: #add8e6; /* light blue */
+    height: 8vh; /* 1/5 of header's 40vh */
+    font-size: 2.4vh; /* reduced by 1/5 from 3vh */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #003366; /* dark blue */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: #003366; /* dark blue */
+    font-family: Arial, sans-serif;
+    font-size: 2.4vh; /* reduced by 1/5 from 3vh */
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.sportive {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    transition: background 0.3s;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.sportive:nth-of-type(1) {
+    background: #ffeedd; /* light peach */
+}
+.sportive:nth-of-type(2) {
+    background: #e6f7ff; /* light blue */
+}
+.sportive:nth-of-type(3) {
+    background: #fffbe6; /* light yellow */
+}
+.sportive:nth-of-type(4) {
+    background: #ffe6f2; /* light pink */
+}
+.sportive:nth-of-type(5) {
+    background: #f0e6ff; /* light purple */
+}
+
+.sportive-content {
+    display: flex;
+    align-items: center; /* Vertically center table and images */
+    gap: 2rem;
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 2rem 0;
+    padding-left: 10vw; /* Shift all content inside sportive to the right */
+    padding-right: 0;   /* Ensure background color runs to right edge */
+    box-sizing: border-box;
+}
+.sportive-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-right: 2rem;
+    min-width: 250px;
+    flex-shrink: 0;
+    border: 2px solid #003366; /* Make table border more visible */
+    border-radius: 12px; /* Add rounded corners to the table */
+    overflow: hidden; /* Ensures border-radius is visible */
+    background: #e6ffe6; /* Light green background for all sportives */
+}
+.sportive-table td {
+    border: 2px solid #003366; /* Make cell borders more visible */
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none; /* Only the outer edge will be visible, not the inner cell borders */
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem; /* Increased by 10% from 1rem */
+    vertical-align: top;
+    color: #003366; /* Ensure table text is visible and dark blue */
+    background: transparent; /* Use table's background */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.sportive-table tr:first-child td {
+    border-top: none;
+}
+.sportive-table tr:last-child td {
+    border-bottom: none;
+}
+.sportive-table tr td:first-child {
+    border-left: none;
+}
+.sportive-table tr td:last-child {
+    border-right: none;
+}
+.sportive-images {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+.sportive-images img {
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.sportive h3 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #003366;
+    font-size: 1.45rem; /* Increased again by 15% from 1.265rem */
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Optionally, you can remove or set margin-left: 0 on .main-content if it causes double shifting */
+.main-content {
+    margin-left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .sportive {
+    padding: 0;
+  }
+  .sportive-content {
+    padding: 1.5rem 0;
+  }
+  .sportive-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .sportive-images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sportive-images img {
+    height: 220px;
+    margin-bottom: 0.5rem;
+  }
+  .sportive-table {
+    margin-right: 0;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 2.2vh;
+    padding: 0.5rem 0.2rem;
+  }
+  header h1, header h2 {
+    font-size: 2.2vh;
+    word-break: break-word;
+  }
+  .page-header {
+    height: 28vh;
+    min-height: 180px;
+  }
+  .nav {
+    flex-direction: column;
+    height: auto;
+    font-size: 2vh;
+    padding: 0.5rem 0;
+  }
+  .nav a {
+    margin: 0.3rem 0;
+    font-size: 2vh;
+  }
+  .sportive {
+    padding: 0;
+  }
+  .sportive-content {
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sportive-images img {
+    height: 120px;
+  }
+  .sportive-table td {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.5rem;
+  }
+  .reasons-box, .one-third-width-column {
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1, header h2 {
+    font-size: 1.3rem;
+  }
+  .page-header {
+    height: 18vh;
+    min-height: 90px;
+  }
+  .sportive-images img {
+    height: 70px;
+  }
+  .sportive-table {
+    min-width: 120px;
+  }
+  .sportive-table td {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.3rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.one-third-width-column {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.reasons-box {
+  background: #003366;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #003366;
+    border-radius: 12px;
+    height: 0;
+    margin: 2rem 0;
+    background: transparent;
+}
+
+.sportive-table td,
+.sportive-table th,
+.sportive .sportive-table tr:first-child td {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #003366;
+    background: transparent;
+}
+.sportive .sportive-table tr:first-child td {
+    font-size: 1.1rem;
+    text-align: center;
+    font-style: italic;
+    padding: 0.5rem 1rem;
+}
+.site-footer {
+    background: #e6f7ff; /* Use a light blue, similar to a sportive section */
+    border: 2px solid #003366;
+    border-radius: 12px;
+    margin: 2rem 0 0 0;
+    padding: 1.5rem 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    color: #003366;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.site-footer a {
+    color: #003366;
+    text-decoration: underline;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+.site-footer a:hover {
+    color: #0055aa;
+}
