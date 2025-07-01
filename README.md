@@ -175,3 +175,22 @@ I have added and synced my `03_PROJECT1` to GitHub from within VS Code, I follow
    ```
 
 *The project is now published on GitHub. I can use the Source Control panel in VS Code for future commits and pushes.*
+
+### Deploying to GitHub Pages
+
+To deploy my website to GitHub Pages:
+
+- I made sure the main HTML file is named `index.html`.
+- I pushed all the latest changes to GitHub.
+- I went to the repository on GitHub in the web browser.
+- I Clicked the "Settings" tab at the top of the repository page.
+- In the left sidebar, scrolled down and clicked "Pages" (or "Pages and deployment").
+- Under "Branch", selected `main` (or `master` if that's your branch), and set the folder to `/ (root)`.
+- Clicked "Save".
+- GitHub will build the site. After a minute or two, I got a link to the live site. Visit that link to view the deployed website.
+
+<span style="font-size: 105%; font-weight: bold;"><strong><em>My Code Institute Milestone_1 Project in Github Pages: <a href="https://juanakas.github.io/code_institute_milestone_1/#home">https://juanakas.github.io/code_institute_milestone_1/#home</a></em></strong></span>
+
+My site is now live and accessible to anyone with the link!
+
+Thank you for visiting.
