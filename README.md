@@ -22,7 +22,7 @@
 
 # 2. HTML Structure Overview
 
-The `road_cycling_index.html` file is the main page of the Road Cycling Sportives website. It is organized to provide a clear, responsive, and visually appealing presentation of cycling events. Here is an overview of its structure:
+The `index.html` file is the main page of the Road Cycling Sportives website. It is organized to provide a clear, responsive, and visually appealing presentation of cycling events. Here is an overview of its structure:
 
 - **DOCTYPE and Head**: The file begins with the HTML5 doctype and includes meta tags for character set, viewport, description, keywords, and author. The page links to the main stylesheet (`styles_2.css`) and sets the page title.
 
@@ -112,7 +112,7 @@ I have validated the HTML code and ensured it meets web standards:
 
 2. Click on the "Validate by File Upload" tab.
 
-3. Click "Choose File" and select `road_cycling_index.html` file from the project directory.
+3. Click "Choose File" and select `index.html` file from the project directory.
 
 4. Click the "Check" button.
 
@@ -139,3 +139,39 @@ I have validated the CSS code and ensured it is error-free:
 ---
 
 *By following these steps, I can ensure my website's HTML and CSS are valid, accessible, and compatible with modern browsers.*
+
+# 5. Deployment
+
+### Syncing the project to GitHub
+
+I have added and synced my `03_PROJECT1` to GitHub from within VS Code, I followed these steps:
+
+1. Open VS Code in the `03_PROJECT1` folder.
+
+2. Open the terminal in VS Code (`Ctrl+``) and initialize a Git repository:
+   ```
+   git init
+   ```
+
+3. Add all files to the repository and make the first commit:
+   ```
+   git add .
+   git commit -m "Initial commit"
+   ```
+
+4. Go to [GitHub](https://github.com) and create a new repository (`code_institute_milestone_1`). Do not initialize with a README, as I already have one.
+
+5. Copy the repository URL provided by GitHub (e.g., `https://github.com/Juanakas/code_institute_milestone_1.git`)
+
+6. In the VS Code terminal, connect the local repository to GitHub:
+   ```
+   git remote add origin https://github.com/yourusername/03_PROJECT1.git
+   ```
+
+7. Set the main branch and push your code to GitHub:
+   ```
+   git branch -M main
+   git push -u origin main
+   ```
+
+*The project is now published on GitHub. I can use the Source Control panel in VS Code for future commits and pushes.*
