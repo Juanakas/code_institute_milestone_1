@@ -2,6 +2,22 @@
 
 **Project Overview:** This website showcases Juan's participation in road cycling sportives throughout 2025. It is designed for cycling enthusiasts, potential participants, and anyone interested in exploring leisure cycling events in Ireland. The site provides event details, completion times, and visual documentation of each sportive, offering both inspiration and practical information for those looking to join similar cycling events.
 
+### Features
+
+- **Hero Header with Background Image**: Users are greeted with an engaging full-width header featuring a cycling image overlay and clear messaging about the site's purpose.
+
+- **Quick Navigation Bar**: Users can easily jump to different sections (Home, Sportives, Facebook) through the sticky navigation menu that works seamlessly on all devices.
+
+- **Reasons to Join Section**: A visually distinct information box presents three compelling reasons for visitors to consider participating in cycling sportives.
+
+- **Event Showcase Cards**: Each sportive event is displayed in its own color-coded section with complete details including date, location, organizer, distance, and completion time in an easy-to-read table format.
+
+- **Image Galleries**: Users can view multiple high-quality images from each event, optimized for fast loading with WebP format while maintaining visual quality.
+
+- **Responsive Design**: The website automatically adapts to any screen size, providing an optimal viewing experience whether on desktop, tablet, or mobile phone.
+
+- **Social Media Integration**: Direct link to the author's Facebook profile enables users to connect and follow future cycling adventures.
+
 - The website welcomes users with a visually appealing header and a clear introduction to the purpose of the site: showcasing completed road cycling sportives.
 
 - Navigation is simple and intuitive, with a fixed navigation bar at the top providing quick links to the Home section, the list of completed sportives, and the area with a click button to the Author's Facebook profile.
