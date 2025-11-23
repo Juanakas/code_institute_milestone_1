@@ -80,7 +80,7 @@ header h2 {
 .page-header {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("sportive_1/1_E.webp");
+    url("../images/sportive_1/1_E.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -196,7 +196,7 @@ header h2 {
   border-spacing: 0;
   width: 100%;
   max-width: 450px;
-  min-width: 280px;
+  min-width: 0;
   flex-shrink: 0;
   border: 3px solid var(--color-border);
   border-radius: 12px;

@@ -1,5 +1,7 @@
 # 1. UX
 
+**Project Overview:** This website showcases Juan's participation in road cycling sportives throughout 2025. It is designed for cycling enthusiasts, potential participants, and anyone interested in exploring leisure cycling events in Ireland. The site provides event details, completion times, and visual documentation of each sportive, offering both inspiration and practical information for those looking to join similar cycling events.
+
 - The website welcomes users with a visually appealing header and a clear introduction to the purpose of the site: showcasing completed road cycling sportives.
 
 - Navigation is simple and intuitive, with a fixed navigation bar at the top providing quick links to the Home section, the list of completed sportives, and the area with a click button to the Author's Facebook profile.
@@ -20,11 +22,15 @@
 
 - The overall layout guides the user naturally from the introduction, through the reasons to join, to the list of events, and finally to the contact information, creating a logical and user-friendly flow.
 
+### Website Preview
+
+<img src="assets/images/screenshot.jpeg" alt="Website Screenshot" width="600">
+
 # 2. HTML Structure Overview
 
 The `index.html` file is the main page of the Road Cycling Sportives website. It is organized to provide a clear, responsive, and visually appealing presentation of cycling events. Here is an overview of its structure:
 
-- **DOCTYPE and Head**: The file begins with the HTML5 doctype and includes meta tags for character set, viewport, description, keywords, and author. The page links to the main stylesheet (`styles_2.css`) and sets the page title.
+- **DOCTYPE and Head**: The file begins with the HTML5 doctype and includes meta tags for character set, viewport, description, keywords, and author. The page links to the main stylesheet (`assets/css/style.css`) and sets the page title.
 
 - **Body and Main Content**: All visible content is wrapped in a `<div class="main-content">` to control horizontal alignment and spacing.
 
@@ -102,7 +108,13 @@ This project showcases a responsive website for road cycling sportives, styled w
 
 ---
 
-# 4. Testing
+# 4. Credits
+
+This project was completed following the tutorials and classes from the HTML and CSS sections of the Code Institute course. The foundational knowledge and best practices taught in these modules were applied throughout the development of this website.
+
+---
+
+# 5. Testing
 
 ### HTML Validator
 
@@ -128,7 +140,7 @@ I have validated the CSS code and ensured it is error-free:
 
 2. Click on the "By File Upload" tab.
 
-3. Click "Choose File" and select `styles_2.css` file from the project directory.
+3. Click "Choose File" and select `style.css` file from the `assets/css` directory.
 
 4. Click the "Check" button.
 
@@ -140,7 +152,7 @@ I have validated the CSS code and ensured it is error-free:
 
 *By following these steps, I can ensure my website's HTML and CSS are valid, accessible, and compatible with modern browsers.*
 
-# 5. Deployment
+# 6. Deployment
 
 ### Syncing the project to GitHub
 
